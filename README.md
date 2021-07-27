@@ -2,7 +2,7 @@
 Portal
 
 I have written a program.
-27/07/2021 17.11 Era 14.5
+28/07/2021 9.57 Era 14.5
 4.18 v. zst
 0%-99.8134% c.
 
