@@ -137,13 +137,13 @@ class compression:
                                 if corridors==cor:
                                     cor=corridors
                                     
-                                if corridors==cor:
+                                if corridors==cor%2:
                                     cor=3
                                     
-                                if corridors==cor:
+                                if corridors==cor%128:
                                     cor=5     
                                                                     
-                                if corridors==cor:
+                                if corridors==cor%256:
                                     cor=7
                                     corridors=0
                                       
@@ -375,15 +375,17 @@ class compression:
                                 if corridors==cor:
                                     cor=corridors
                                     
-                                if corridors==cor:
+                                if corridors==cor%2:
                                     cor=3
                                     
-                                if corridors==cor:
+                                if corridors==cor%128:
                                     cor=5
                                     
-                                if corridors==cor:
+                                if corridors==cor%255:
                                     cor=7
                                     corridors=0
+                                    
+                                
                                       
                                 if block<=cor:
                                     if e4=="0":
