@@ -4,7 +4,7 @@ Portal
 I have written a program.
 28/07/2021 10:00 Era 14.5
 4.18 v. zst
-0%-100% c.
+0%-99.8134% c.
 
 
 zst
