@@ -4,7 +4,7 @@ import os
 import binascii
 namez = input("ul or for compress cl for extract for compress zst cld fo extract zst cldd? ")
 #@Author Jurijus pacalovas
-#class03917606322JurijusPacalovasmade.pdf compression:03917606322JurijusPacalovasmade.pdf65536
+#https://app.asana.com/0/1200679503823047/1200679503823050
 class compression:
     def cryptograpy_compression(self):
                 
