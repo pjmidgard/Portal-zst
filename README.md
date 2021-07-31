@@ -20,3 +20,4 @@ mysqlx.getSession(), mysql.getSession(), or mysql.getClassicSession() function, 
 
 I have a patent who can pay for 5 000 000 euros.
 Address: D11A3HA
+We can meet at home.
