@@ -130,9 +130,9 @@ class compression:
                                                 
                                 e4=sda2[e2:e3]
                                 
-                                block=block+0.01
+                                block=block+0.001
 
-                                corridors=corridors+0.01%131073
+                                corridors=corridors+1%257
                                 
                                 if block<=corridors:
                                     if e4=="0":
@@ -177,7 +177,7 @@ class compression:
                                     if e4=="1":
                                         sda3=sda3+"0"
                                         e4="0"
-                                        block=2
+                                        block=0
                                         e4=""
                                                  
                                 if e4=="0":
@@ -355,9 +355,9 @@ class compression:
                                                 
                                 e4=sda2[e2:e3]
                                 
-                                block=block+0.01
+                                block=block+0.001
 
-                                corridors=corridors+0.01%131073
+                                corridors=corridors+1%257
                                 
                                 if block<=corridors:
                                     if e4=="0":
@@ -402,7 +402,7 @@ class compression:
                                     if e4=="1":
                                         sda3=sda3+"0"
                                         e4="0"
-                                        block=2
+                                        block=0
                                         e4=""
                                         
                                             
