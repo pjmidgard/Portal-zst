@@ -8,12 +8,12 @@ namez = input("ul or for compress cl for extract for compress zst cld fo extract
 class compression:
     def cryptograpy_compression(self):
                 
-                self.name = "Written: Jurijus pacalovas Price Protal 5 000 000 Euro cost Date: 01/08/2021 20:52 Deep 14.5 ERA"
+                self.name = "Written: Jurijus pacalovas Price Protal 5 000 000 Euro cost Date: 01/08/2021 21:15 Deep 14.5 ERA"
                 if namez=="ul":
                     corridors=0
                     cor=7
                     name = input("What is name of file? ")
-                    namea="file.W0"
+                    namea="file.W"
                     namem=""
                     namema="?"
                  
@@ -130,9 +130,9 @@ class compression:
                                                 
                                 e4=sda2[e2:e3]
                                 
-                                block=block+0.001
+                                block=block+0.00001
 
-                                corridors=corridors+1%257
+                                corridors=corridors+1%513
                                 
                                 if block<=corridors:
                                     if e4=="0":
@@ -224,7 +224,7 @@ class compression:
                                     szxzs=""
                             
                                     assxw=assxw+1
-                                    if assxw==1:
+                                    if assxw==2:
                                         assx=10
                                         if assx==10:
                                         	
@@ -355,9 +355,9 @@ class compression:
                                                 
                                 e4=sda2[e2:e3]
                                 
-                                block=block+0.001
+                                block=block+0.00001
 
-                                corridors=corridors+1%257
+                                corridors=corridors+1%513
                                 
                                 if block<=corridors:
                                     if e4=="0":
@@ -451,7 +451,7 @@ class compression:
                                     szxzs=""
                             
                                     assxw=assxw+1
-                                    if assxw==1:
+                                    if assxw==2:
                                         assx=10
                                         if assx==10:
                                            
