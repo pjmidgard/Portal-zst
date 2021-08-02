@@ -2,13 +2,13 @@ from time import time
 cvf=0
 import os
 import binascii
-namez = input("ul or for compress cl for extract for compress zst cld fo extract zst cldd? ")
+namez = input("ul or for compress cl for extract for compress v. 4.19 .zst cld fo extract zst cldd? ")
 #@Author Jurijus pacalovas
 #https://app.asana.com/0/1200679503823047/1200679503823050
 class compression:
     def cryptograpy_compression(self):
                 
-                self.name = "Written: Jurijus pacalovas Price Protal 5 000 000 Euro cost Date: 01/08/2021 13:28 Deep 14.5 ERA"
+                self.name = "Written: Jurijus pacalovas Price Protal 5 000 000 Euro cost Date: 02/08/2021 17:16 Deep 14.5 ERA"
                 if namez=="ul":
                     corridors=0
                     cor=7
