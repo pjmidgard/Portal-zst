@@ -173,11 +173,11 @@ class compression:
                                         block=7
                                         e4=""
                                              
-                                if block==7:
+                                if block==corridors:
                                     if e4=="1":
                                         sda3=sda3+"0"
                                         e4="0"
-                                        block=0
+                                        block=corridors
                                         e4=""
                                                  
                                 if e4=="0":
@@ -398,11 +398,11 @@ class compression:
                                         block=7
                                         e4=""
                                                           
-                                if block==7:
+                                if block==corridors:
                                     if e4=="1":
                                         sda3=sda3+"0"
                                         e4="0"
-                                        block=0
+                                        block=corridors
                                         e4=""
                                         
                                             
