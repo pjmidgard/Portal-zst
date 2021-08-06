@@ -8,7 +8,7 @@ namez = input("ul or for compress cl for extract for compress zst cld fo extract
 class compression:
     def cryptograpy_compression(self):
                 
-                self.name = "Written: Jurijus pacalovas Price Protal 5 000 000 Euro cost Date: 01/08/2021 17:41 Deep 14.5 ERA"
+                self.name = "Written: Jurijus pacalovas Price Protal 5 000 000 Euro cost Date: 01/08/2021 13:28 Deep 14.5 ERA"
                 if namez=="ul":
                     corridors=0
                     cor=7
@@ -132,48 +132,48 @@ class compression:
                                 
                                 block=block+1
 
+                                corridors=corridors+1%257
                                 
-                                
-                                if block==4:
+                                if block<=3:
                                     if e4=="0":
                                         sda3=sda3+"0"
                                         e4="0"
-                                        block=0
+                                        block=corridors
                                         e4=""
                                         
                                     if e4=="1":
                                         sda3=sda3+"1"
                                         e4="1"
-                                        block=0
+                                        block=7
                                         e4=""
 
-                                if block==3:
+                                if block>=8:
                                     if e4=="1":
                                         sda3=sda3+"0"
                                         e4="0"
-                                        
+                                        block=0
                                         e4=""
                                         
                                     if e4=="0":
                                         sda3=sda3+"1"
                                         e4="1"
-                                        
+                                        block=0
                                         e4=""
                                         
-                                if block==2:
+                                if block<=6:
                                     if e4=="0":
                                         sda3=sda3+"1"
                                         e4="1"
-                                        
+                                        block=7
                                         e4=""
                                        
                                     if e4=="1":
                                         sda3=sda3+"0"
                                         e4="0"
-                                        
+                                        block=7
                                         e4=""
                                              
-                                if block==1:
+                                if block==7:
                                     if e4=="1":
                                         sda3=sda3+"0"
                                         e4="0"
@@ -183,7 +183,7 @@ class compression:
                                 if e4=="0":
                                         sda3=sda3+"1"
                                         e4="1"
-                                        
+                                        block=0
                                         e4=""     
                                         
                                 e2=e2+1
@@ -224,7 +224,7 @@ class compression:
                                     szxzs=""
                             
                                     assxw=assxw+1
-                                    if assxw==200:
+                                    if assxw==1:
                                         assx=10
                                         if assx==10:
                                         	
@@ -357,59 +357,59 @@ class compression:
                                 
                                 block=block+1
 
-                               
+                                corridors=corridors+1%257
                                 
-                                if block==4:
+                                if block<=3:
                                     if e4=="0":
                                         sda3=sda3+"0"
                                         e4="0"
-                                        block=0
+                                        block=corridors
                                         e4=""
                                         
                                     if e4=="1":
                                         sda3=sda3+"1"
                                         e4="1"
-                                        block=0
+                                        block=7
                                         e4=""
                                           
-                                if block==3:
+                                if block>=8:
                                     if e4=="1":
                                         sda3=sda3+"0"
                                         e4="0"
-                                        
+                                        block=0
                                         e4=""
                                              
                                     if e4=="0":
                                         sda3=sda3+"1"
                                         e4="1"
-                                        
+                                        block=0
                                         e4=""
                                         
-                                if block==2:
+                                if block<=6:
                                     if e4=="0":
                                         sda3=sda3+"1"
                                         e4="1"
-                                        
+                                        block=7
                                         e4=""
                                         
                                     if e4=="1":
                                         sda3=sda3+"0"
                                         e4="0"
-                                        
+                                        block=7
                                         e4=""
                                                           
-                                if block==1:
+                                if block==7:
                                     if e4=="1":
                                         sda3=sda3+"0"
                                         e4="0"
-                                        
+                                        block=0
                                         e4=""
                                         
                                             
                                 if e4=="0":
                                         sda3=sda3+"1"
                                         e4="1"
-                                        
+                                        block=0
                                         e4=""     
 
 
@@ -451,7 +451,7 @@ class compression:
                                     szxzs=""
                             
                                     assxw=assxw+1
-                                    if assxw==200:
+                                    if assxw==1:
                                         assx=10
                                         if assx==10:
                                            
@@ -582,7 +582,202 @@ class compression:
                                 f2.write(data)
                                 x2 = time()
                                 x3=x2-x
+                                return print(x3) 
+    def cryptograpy3(self):
+                if namez=="cld3":
+                    name = input("What is name of file? ")
+                    namea="file.WhiteHall"
+                    namem=""
+                    namema="?"
+                 
+
+                    assxw=0
+                    blockw=5
+                    blockw1=4
+                    nameas=name
+                    nac=len(nameas)
+                    nameas=name+".bin"
+                        
+                    countraz=0
+                    cvf=2
+                    cvf1=0
+                    s=""
+                    e2=0
+                    e3=2
+                    e4=""
+                    c=2
+                    sw=2
+                    elw=0
+                   
+                    sda3=""
+
+                    sscvf=0
+                    
+                    qqqqwzl=0
+
+                    block=0
+
+                    x=0
+                    x1=0
+                    x2=0
+                    x = time()
+                   
+                    with open(nameas, "w") as f4:
+                            f4.write(s)
+                    with open(nameas, "a") as f3:
+                            f3.write(s)
+                    with open(name, "rb") as binary_file:
+                        # Read the whole file at once
+                        data = binary_file.read()
+                        data=data[4:]
+                        s=str(data)
+                        lenf1=len(data)
+                        lenf5=len(data)
+             
+                        
+                        with open(nameas, "ab") as f2:
+                            assx=10
+                            if assx==10:
+                                f2.write(data)
+                                x2 = time()
+                                x3=x2-x
+                                return print(x3)      
+ 
+    def cryptograpy3(self):
+                if namez=="cld3":
+                    name = input("What is name of file? ")
+                    namea="file.WhiteHall"
+                    namem=""
+                    namema="?"
+                 
+
+                    assxw=0
+                    blockw=5
+                    blockw1=4
+                    nameas=name
+                    nac=len(nameas)
+                    nameas=name+".bin"
+                        
+                    countraz=0
+                    cvf=2
+                    cvf1=0
+                    s=""
+                    e2=0
+                    e3=2
+                    e4=""
+                    c=2
+                    sw=2
+                    elw=0
+                   
+                    sda3=""
+
+                    sscvf=0
+                    
+                    qqqqwzl=0
+
+                    block=0
+
+                    x=0
+                    x1=0
+                    x2=0
+                    x = time()
+                   
+                    with open(nameas, "w") as f4:
+                            f4.write(s)
+                    with open(nameas, "a") as f3:
+                            f3.write(s)
+                    with open(name, "rb") as binary_file:
+                        # Read the whole file at once
+                        data = binary_file.read()
+                        data=data[4:]
+                        s=str(data)
+                        lenf1=len(data)
+                        lenf5=len(data)
+                        if lenf1<6:
+                            print("This file is too small");
+                            raise SystemExit
+                        if lenf1>(2**32)-1:
+                            print("This file is too big");
+                            raise SystemExit
+                        
+                        with open(nameas, "ab") as f2:
+                            assx=10
+                            if assx==10:
+                                f2.write(data)
+                                x2 = time()
+                                x3=x2-x
+                                return print(x3)
+
+
+
+    def cryptograpy_unpack3(self):
+                if namez=="cldd3":
+                    name = input("What is name of file? ")
+                    namea="file.WhiteHall"
+                    namem=""
+                    namema="?"
+                 
+
+                    assxw=0
+                    blockw=5
+                    blockw1=4
+                    nameas=name
+                    nac=len(nameas)
+                    nameas=name[:nac-4]
+                        
+                    countraz=0
+                    cvf=2
+                    cvf1=0
+                    s=""
+                    e2=0
+                    e3=2
+                    e4=""
+                    c=2
+                    sw=2
+                    elw=0
+                   
+                    sda3=""
+
+                    sscvf=0
+                    
+                    qqqqwzl=0
+
+                    block=0
+
+                    x=0
+                    x1=0
+                    x2=0
+                    x = time()
+                   
+                    with open(nameas, "w") as f4:
+                            f4.write(s)
+                    with open(nameas, "a") as f3:
+                            f3.write(s)
+                    with open(name, "rb") as binary_file:
+                        # Read the whole file at once
+                        data = binary_file.read()
+                        
+                        data = b'\x28\xb5\x2f\xfd'+data
+                        s=str(data)
+                        lenf1=len(data)
+                        lenf5=len(data)
+                        if lenf1<6:
+                            print("This file is too small");
+                            raise SystemExit
+                        if lenf1>(2**32)-1:
+                            print("This file is too big");
+                            raise SystemExit
+                        
+                        with open(nameas, "ab") as f2:
+                            assx=10
+                            if assx==10:
+                                
+                                f2.write(data)
+                                x2 = time()
+                                x3=x2-x
                                 return print(x3)                       
+
+           
 
 d=compression()
 
@@ -595,5 +790,12 @@ print(xw1)
 xw2=d.cryptograpy()
 print(xw2)
 
-xw1=d.cryptograpy_unpack2()
-print(xw1)
+xw3=d.cryptograpy_unpack2()
+print(xw3)
+
+xw4=d.cryptograpy_unpack3()
+print(xw4)
+
+
+xw5=d.cryptograpy3()
+print(xw5)
