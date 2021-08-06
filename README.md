@@ -2,6 +2,8 @@
 Portal
 Portal4.py
 
+Speed: 2KB - 2MB Max 10MB - 10 GB
+
 Add instructions:
 cld3 ; cldd3
 
