@@ -12,7 +12,7 @@ cld, cld3, cld, cld3; cldd3, cldd, cldd3, cldd
 
 cl; ul;
 
-I have written a program.
+Jurijus Pacalovas written program.
 
 4.19 v. zst
 
