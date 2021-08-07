@@ -60,7 +60,3 @@ Upon decoding [D, L, c], again, D = LR. When the first LR characters are 
 Considering the above, especially if the compression of data runs is expected to predominate, the window search should begin at the end of the window and proceed backwards, since run patterns, if they exist, will be found first and allow the search to terminate, absolutely if the current maximal matching sequence length is met, or judiciously, if a sufficient length is met, and finally for the simple possibility that the data is more recent and may correlate better with the next input.
 
 In computer science and information theory, a Huffman code is a particular type of optimal prefix  that is commonly used for lossless data compression. The process of finding or using such a code proceeds by means of Huffman coding, an algorithm developed by David A. Huffman while he was a Sc.D. student at MIT, and published in the 1952 paper "A Method for the Construction of Minimum-Redundancy Codes".
-
-I have a patent who can pay for 5 000 000 euros.
-Address: D11A3HA
-We can meet at home.
