@@ -4,7 +4,10 @@ Portal-Portal4.py
 Speed: Ultra 2KB - 2MB Max 10MB - 10 GB/s
 
 Add instructions:
-cld3 ; cldd3
+cl, cld, cld3 ; cldd3, cldd, ul
+cld, cld3; cldd3 cld
+cld, cld3, cld, cld3; cldd3, cldd, cldd3, cld
+cl; ul;
 
 I have written a program.
 
