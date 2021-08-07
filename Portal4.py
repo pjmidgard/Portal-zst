@@ -631,7 +631,7 @@ class compression:
                         # Read the whole file at once
                         data = binary_file.read()
                        
-                        if  data == b'\x28\xb5\x2f\xfd':
+                        if  data [0:4] == b'\x28\xb5\x2f\xfd':
                             data=data[4:]
                         else:
                         	print("Program close because you din't read instructions")
