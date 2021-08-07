@@ -7,7 +7,7 @@ namez = input("ul or for compress cl for extract for compress zst cld fo extract
 class compression:
     def cryptograpy_compression(self):
                
-                self.name = "Written: Jurijus pacalovas Price Protal 5 000 000 Euro cost Date: 07/08/2021 11:38 Deep 14.5 ERA"
+                self.name = "Written: Jurijus pacalovas Price Protal 5 000 000 Euro cost Date: 07/08/2021 21:36 Deep 14.5 ERA"
                 if namez=="ul":
                     corridors=0
                     cor=7
