@@ -7,7 +7,7 @@ namez = input("ul or for compress cl for extract for compress zst cld fo extract
 class compression:
     def cryptograpy_compression(self):
                
-                self.name = "Written: Jurijus pacalovas Price Protal 5 000 000 Euro cost Date: 07/08/2021 21:36 Deep 14.5 ERA"
+                self.name = "Written: Jurijus pacalovas Price Protal 5 000 000 Euro cost Date: 08/08/2021 12:03 Deep 14.5 ERA"
                 if namez=="ul":
                     corridors=0
                     cor=7
@@ -699,12 +699,7 @@ class compression:
                         s=str(data)
                         lenf1=len(data)
                         lenf5=len(data)
-                        if lenf1<6:
-                            print("This file is too small");
-                            raise SystemExit
-                        if lenf1>(2**32)-1:
-                            print("This file is too big");
-                            raise SystemExit
+    
                         
                         with open(nameas, "ab") as f2:
                             assx=10
