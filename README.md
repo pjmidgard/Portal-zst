@@ -16,7 +16,7 @@ Jurijus Pacalovas written program.
 
 4.19 v. zst
 
-0%-99.9944% c.
+0%-99.9949% c.
 
 Cryptography
 
