@@ -3,7 +3,7 @@ https://m.youtube.com/watch?v=pRNzqWPIV30&t=1s
 
 Speed: Ultra 2KB - 2MB Max 10MB - 10 GB/s
 
-Add instructions:
+Instruction:
 
 cl, cld, cld3 ; cldd3, cldd, ul
 
