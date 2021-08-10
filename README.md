@@ -15,7 +15,7 @@ cl; ul;
 
 Jurijus Pacalovas written program.
 
-4.19 v. zst
+4.20 v. zst
 
 0%-99.9949% c.
 
