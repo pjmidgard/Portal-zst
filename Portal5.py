@@ -592,7 +592,7 @@ class compression:
                     blockw1=4
                     nameas=name
                     nac=len(nameas)
-                    nameas=name+".bin"
+                    nameas=name+".bin.bin"
                         
                     countraz=0
                     cvf=2
@@ -654,7 +654,7 @@ class compression:
                     blockw1=4
                     nameas=name
                     nac=len(nameas)
-                    nameas=name[:nac-4]
+                    nameas=name[:nac-8]
                         
                     countraz=0
                     cvf=2
@@ -717,7 +717,7 @@ class compression:
                     blockw1=4
                     nameas=name
                     nac=len(nameas)
-                    nameas=name+".bin"
+                    nameas=name+".bin.bin.bin"
                         
                     countraz=0
                     cvf=2
@@ -782,7 +782,7 @@ class compression:
                     blockw1=4
                     nameas=name
                     nac=len(nameas)
-                    nameas=name[:nac-4]
+                    nameas=name[:nac-12]
                         
                     countraz=0
                     cvf=2
