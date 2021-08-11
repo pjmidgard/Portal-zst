@@ -14,7 +14,7 @@ cl; ul; .bin
 
 Jurijus Pacalovas written program.
 
-4.20 v. zst
+4.21 v. zst
 
 0%-99.9949% c.
 
