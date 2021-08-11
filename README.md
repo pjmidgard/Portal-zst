@@ -5,7 +5,8 @@ https://youtu.be/rMVbiHRXfMI
 Speed: Ultra 2KB - 2MB Max 10MB - 10GB/s
 
 Instruction:
-
+1. Need python and install pip: pip install zstd
+2. 
 cl, cld, cld3 ; cldd3, cldd, ul .bin.bin.bin.bin.bin.bin
 
 cld, cld3; cldd3 cld .bin.bin.bin.bin.bin
