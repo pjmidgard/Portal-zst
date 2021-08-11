@@ -1,5 +1,5 @@
 # Portal-zst
-Speed: Ultra 2KB - 2MB Max 10MB - 10GB/s
+Speed: Absolute 2KB Ultra 2MB-10MB Max 8GB-80GB/s
 
 Instruction:
 1. Need python and install pip: pip install zstd
