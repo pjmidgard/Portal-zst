@@ -6,13 +6,13 @@ Speed: Ultra 2KB - 2MB Max 10MB - 10GB/s
 
 Instruction:
 
-cl, cld, cld3 ; cldd3, cldd, ul
+cl, cld, cld3 ; cldd3, cldd, ul .bin.bin.bin.bin.bin.bin
 
-cld, cld3; cldd3 cld
+cld, cld3; cldd3 cld .bin.bin.bin.bin.bin
 
-cld, cld3, cld, cld3; cldd3, cldd, cldd3, cldd
+cld, cld3, cld, cld3; cldd3, cldd, cldd3, cldd .bin.bin.bin.bin.bin.bin.bin.bin.bin.bin
 
-cl; ul;
+cl; ul; .bin
 
 Jurijus Pacalovas written program.
 
