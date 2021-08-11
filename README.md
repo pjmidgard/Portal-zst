@@ -6,8 +6,6 @@ Speed: Ultra 2KB - 2MB Max 10MB - 10GB/s
 
 Instruction:
 
-Secret compression
-
 cl, cld, cld3 ; cldd3, cldd, ul
 
 cld, cld3; cldd3 cld
