@@ -10,6 +10,9 @@ class compression:
                
                 self.name = "Written: Jurijus pacalovas Price Protal 5 000 000 Euro cost Date: 11/08/2021 20:30 Deep 14.5 ERA"
                 if namez=="ul":
+                    
+                    
+                    Portal=2
                     corridors=0
                     cor=7
                     name = input("What is name of file? ")
@@ -28,7 +31,9 @@ class compression:
                     	Portal=3
                     if nameas[nac-4:nac]==".doc":
                     	Portal=1
+                
                     nameas=name+".bin"
+                    
                     
                     
                     
@@ -354,7 +359,7 @@ class compression:
                     corridors=0
                     cor=7
                     name = input("What is name of file? ")
-                    
+                    Portal=2
                     namea="file.W"
                     namem=""
                     namema="?"
@@ -702,6 +707,14 @@ class compression:
                     blockw1=4
                     nameas=name
                     nac=len(nameas)
+                    if nameas[nac-8:nac]==".jpg.bin":
+                    	Portal=4
+                    if nameas[nac-8:nac]==".png.bin":
+                    	Portal=4
+                    if nameas[nac-4:nac]==".jpg":
+                    	Portal=4
+                    if nameas[nac-4:nac]==".png":
+                    	Portal=4
                     nameas=name+".bin.bin"
                         
                     countraz=0
@@ -736,8 +749,13 @@ class compression:
                         # Read the whole file at once
                         data = binary_file.read()
                         lenf10=len(data)
-                        import zstd
-                        data=zstd.compress(data)
+                        data[0:1024]
+                        if Portal==4:
+                        	import zstd
+                        	data=zstd.compress(data)
+                        else:	
+                            import zstd
+                        	data=zstd.compress(data)
                         s=str(data)
                         lenf1=len(data)
                         lenf5=len(data)
