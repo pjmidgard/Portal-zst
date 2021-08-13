@@ -2,8 +2,10 @@
 Speed: Absolute 2KB Ultra 2MB-10MB Max 8GB-80GB/s
 
 Instruction:
-1. Need python and install pip: pip install zstd
-2. 
+1. Need python 
+2. install pip: pip install zstd
+3. install pip: pip install brotli
+4.
 cl, cld, cld3 ; cldd3, cldd, ul .bin.bin.bin.bin.bin.bin
 
 cld, cld3; cldd3 cld .bin.bin.bin.bin.bin
