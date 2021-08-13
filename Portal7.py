@@ -8,7 +8,7 @@ namez = input("ul or for compress cl for extract for compress zst cld fo extract
 class compression:
     def cryptograpy_compression(self):
                
-                self.name = "Written: Jurijus pacalovas Price Protal 5 000 000 Euro cost Date: 13/08/2021 11:01 Deep 14.5 ERA"
+                self.name = "Written: Jurijus pacalovas Price Protal 5 000 000 Euro cost Date: 13/08/2021 11:14 Deep 14.5 ERA"
                 if namez=="ul":
                     corridors=0
                     cor=7
@@ -910,11 +910,7 @@ class compression:
                         	data=data[5:]
                         	
                         if  data [0:4] == b'\x28\xb5\x2f\xfd' and Portal==5:
-                            data=data[4:]
-                        if  data [0:4] != b'\x28\xb5\x2f\xfd' and Portal ==5: 
-                        	print("Program close because you  didn't read instructions.")
-                        	raise SystemExit
-                            
+                            data=data[4:]                         
                         if Portal == 2:
                         	print("Program close because this is it finish to compress bofore.")
                         	raise SystemExit
