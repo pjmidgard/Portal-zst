@@ -782,11 +782,11 @@ class compression:
                     nac=len(nameas)
                     nameas=name[:nac-8]
                     if nameas[nac-8:nac]==".jpg.bin":
-                    	Portal=4
+                    	Portal=2
                     if nameas[nac-8:nac]==".png.bin":
                     	Portal=4
                     if nameas[nac-4:nac]==".jpg":
-                    	Portal=4
+                    	Portal=2
                     if nameas[nac-4:nac]==".png":
                     	Portal=4
                         
@@ -827,9 +827,11 @@ class compression:
                         if Portal==4:
                         	import brotli
                         	data=brotli.decompress(data)
-                        else:	
+                        if Portal==5:	
                             import zstd
                             data=zstd.decompress(data)
+                        if Portal == 2:
+                        	print("Program close because you did incorrect fings."))
                         
                         s=str(data)
                         lenf1=len(data)
