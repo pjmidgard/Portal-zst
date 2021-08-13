@@ -34,6 +34,7 @@ mysqlx.getSession(), mysql.getSession(), or mysql.getClassicSession() function, 
 
 Zst or zstd or Zstandard combines a dictionary-matching stage (LZ77) with a large search window and a fast entropy coding stage, using both Finite State 
 Entropy (a fast tabled version of ANS, tANS, used for entries in the Sequences section), and Huffman coding (used for entries in the Literals section).
+Also, I use Brotli.
 
 LZ77 algorithms achieve compression by replacing repeated occurrences of data with references to a single copy of that data existing earlier in the uncompressed data stream. A match is encoded by a pair of numbers called a length-distance pair, which is equivalent to the statement "each of the next length characters is equal to the characters exactly distance characters behind it in the uncompressed stream". (The distance is sometimes called the offset instead.)
 
@@ -62,5 +63,7 @@ Upon decoding [D, L, c], again, D = LR. When the first LR characters are 
 Considering the above, especially if the compression of data runs is expected to predominate, the window search should begin at the end of the window and proceed backwards, since run patterns, if they exist, will be found first and allow the search to terminate, absolutely if the current maximal matching sequence length is met, or judiciously, if a sufficient length is met, and finally for the simple possibility that the data is more recent and may correlate better with the next input.
 
 In computer science and information theory, a Huffman code is a particular type of optimal prefix  that is commonly used for lossless data compression. The process of finding or using such a code proceeds by means of Huffman coding, an algorithm developed by David A. Huffman while he was a Sc.D. student at MIT, and published in the 1952 paper "A Method for the Construction of Minimum-Redundancy Codes".
+
+Brotli is a data format specification[2] for data streams compressed with a specific combination of the general-purpose LZ77 lossless compression algorithm, Huffman coding and 2nd order context modelling. Brotli is a compression algorithm developed by Google and works best for text compression. Brotli is primarily used by web servers and content delivery networks to compress HTTP content, making internet websites load faster. A successor to gzip, it is supported by all major web browsers and is becoming increasingly popular, as it provides better compression than gzip
 
 Compression ee-ther.
