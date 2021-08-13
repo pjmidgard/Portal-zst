@@ -12,6 +12,8 @@ cld, cld3, cld, cld3; cldd3, cldd, cldd3, cldd .bin.bin.bin.bin.bin.bin.bin.bin.
 
 cl; ul; .bin
 
+cld ; cldd .bin.bin
+
 Jurijus Pacalovas written program.
 
 4.22 v. zst
