@@ -774,13 +774,14 @@ class compression:
                     namea="file.W"
                     namem=""
                     namema="?"
-                    Porta=2
+                    Portal=2
                     assxw=0
                     blockw=5
                     blockw1=4
                     nameas=name
                     nac=len(nameas)
-                    nameas=name[:nac-8]
+                    nameas=nameas[:nac-8]
+                    nac=len(nameas)
                     if nameas[nac-8:nac]==".jpg.bin":
                     	Portal=4
                     if nameas[nac-8:nac]==".png.bin":
@@ -789,6 +790,8 @@ class compression:
                     	Portal=4
                     if nameas[nac-4:nac]==".png":
                     	Portal=4
+                    print(Portal)	
+                    print(nameas)
                         
                     countraz=0
                     cvf=2
