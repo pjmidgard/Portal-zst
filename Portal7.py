@@ -850,23 +850,23 @@ class compression:
                     namea="file.W"
                     namem=""
                     namema="?"
-                    Portal=2
+                    Portal=5
                     assxw=0
                     blockw=5
                     blockw1=4
                     nameas=name
                     nac=len(nameas)             
                     if nameas[nac-16:nac]==".jpg.bin.bin.bin":
-                    	Portal=4
+                    	Portal=2
                     if nameas[nac-16:nac]==".png.bin.bin.bin":
                     	Portal=4
                     if nameas[nac-12:nac]==".jpg.bin.bin":
-                    	Portal=4
+                    	Portal=2
                     if nameas[nac-12:nac]==".png.bin.bin":
                     	Portal=4
                     nac=len(nameas)
                     nameas=name+".bin.bin.bin"
-                    print(Portal)
+                    
                     countraz=0
                     cvf=2
                     cvf1=0
@@ -904,11 +904,17 @@ class compression:
                      
                         	data=data[5:]
                         	
-                        if  data [0:4] == b'\x28\xb5\x2f\xfd' or Portal!=4:
-                            data=data[4:]
-                        if Portal == 2:
-                        	print("Program close because you din't read instructions")
+                        if  data [0:4] == b'\x28\xb5\x2f\xfd':
+                            data=data[4:] and Portal==5:
+                        if  data [0:4] != b'\x28\xb5\x2f\xfd' and Portal ==5: 
+                        	print("Program close because you  didn't read instructions.")
                         	raise SystemExit
+                            
+                        if Portal == 2:
+                        	print("Program close because this is it finish to compress.")
+                        	raise SystemExit
+
+                        
                         
                         s=str(data)
                         lenf1=len(data)
@@ -938,11 +944,11 @@ class compression:
                     nac=len(nameas)
                     nameas=name[:nac-12]
                     if nameas[nac-16:nac]==".jpg.bin.bin.bin":
-                    	Portal=4
+                    	Portal=2
                     if nameas[nac-16:nac]==".png.bin.bin.bin":
                     	Portal=4
                     if nameas[nac-12:nac]==".jpg.bin.bin":
-                    	Portal=4
+                    	Portal=2
                     if nameas[nac-12:nac]==".png.bin.bin":
                     	Portal=4    
                     countraz=0
