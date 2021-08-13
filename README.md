@@ -14,6 +14,9 @@ cl; ul; .bin
 
 cld ; cldd .bin.bin
 
+ul, cld; cl, cldd .bin.bin.bin
+
+
 Jurijus Pacalovas written program.
 
 4.22 v. zst
