@@ -8,7 +8,7 @@ namez = input("ul or for compress cl for extract for compress zst cld fo extract
 class compression:
     def cryptograpy_compression(self):
                
-                self.name = "Written: Jurijus pacalovas Price Protal 5 000 000 Euro cost Date: 13/08/2021 9:13 Deep 14.5 ERA"
+                self.name = "Written: Jurijus pacalovas Price Protal 5 000 000 Euro cost Date: 13/08/2021 9:15 Deep 14.5 ERA"
                 if namez=="ul":
                     corridors=0
                     cor=7
@@ -831,7 +831,8 @@ class compression:
                             import zstd
                             data=zstd.decompress(data)
                         if Portal == 2:
-                        	print("Program close because you did incorrect fings."))
+                        	print("Program close because you did incorrect fings.")
+                        	raise SystemExit
                         
                         s=str(data)
                         lenf1=len(data)
