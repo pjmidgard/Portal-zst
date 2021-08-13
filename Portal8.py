@@ -8,7 +8,7 @@ namez = input("ul or for compress cl for extract for compress zst cld fo extract
 class compression:
     def cryptograpy_compression(self):
                
-                self.name = "Written: Jurijus pacalovas Price Protal 5 000 000 Euro cost Date: 13/08/2021 15:53 Deep 14.5 ERA"
+                self.name = "Written: Jurijus pacalovas Price Protal 5 000 000 Euro cost Date: 13/08/2021 17: 25 Deep 14.5 ERA"
                 if namez=="ul":
                     corridors=0
                     cor=7
@@ -692,7 +692,7 @@ class compression:
                                     jl=binascii.unhexlify(qqwslenf % n)
                                     sssssw=len(jl)
                                     data=jl
-                                    jl=b'\x89\x50\x4e\x47\x0d\x0a\x1a\x0a\x00\x00\x00\x0d\x49\x48\x44\x52\x00\x00\x04\x38\x00\x00\x09\x24\x08\x02\x00\x00\x00\x76\xb1\x58\xf8\x00\x00\x00\x01\x73\x52\x47\x42' +jl
+                                    if Portal==7:                               	jl=b'\x89\x50\x4e\x47\x0d\x0a\x1a\x0a\x00\x00\x00\x0d\x49\x48\x44\x52\x00\x00\x04\x38\x00\x00\x09\x24\x08\x02\x00\x00\x00\x76\xb1\x58\xf8\x00\x00\x00\x01\x73\x52\x47\x42' +jl
                                     qqqwz=qqqwz+1
                                     szxzzza=""
                                     szxzs=""
