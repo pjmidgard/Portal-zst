@@ -1,0 +1,6 @@
+[autorun]
+Label=MOSM
+ICON=F:\\Whitehole\\Portal8.ico
+;Open=F:\\Whitehole\\Portal8.py
+ShellExecute=F:\\Whitehole\\Portal8.py
+UseAutoPlay=1
