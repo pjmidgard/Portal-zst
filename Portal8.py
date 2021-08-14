@@ -767,8 +767,8 @@ class compression:
                         	data=brotli.compress(data)
                         
                         else:	
-                            import zstd
-                            data=zstd.compress(data)
+                            import zstandard
+                            data=zstandard.compress(data)
                         s=str(data)
                         lenf1=len(data)
                         lenf5=len(data)
@@ -844,8 +844,8 @@ class compression:
                         	import brotli
                         	data=brotli.decompress(data)
                         if Portal==5:	
-                            import zstd
-                            data=zstd.decompress(data)
+                            import zstandard
+                            data=zstandard.decompress(data)
                    
                         
                         
