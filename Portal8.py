@@ -3,7 +3,7 @@ cvf=0
 Portal=2
 import os
 import binascii
-namez = input("ul,c or for compress cl,u for extract for compress zst cld fo extract zst cldd? ")
+namez = input("ul or for compress cl for extract for compress zst cld fo extract zst cldd? ")
 #@Author Jurijus pacalovas
 class compression:
     
