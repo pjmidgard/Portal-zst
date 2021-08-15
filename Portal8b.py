@@ -150,7 +150,7 @@ if namez=="c":
     numbers = []
         
     
-    namea=name+".b"
+    namea=name+".bin.bin.bin.bin"
     namem=name+"/"
 
     nameas=name
