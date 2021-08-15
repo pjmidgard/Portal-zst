@@ -211,7 +211,7 @@ class compression:
                                 
                                
 	                           
-                                if Portal==7 or Portal==2:
+                                if Portal==7 or Portal==2 or Portal == 1:
                                  
                                      corridors=corridors+1%8
                                      if block==corridors%3:
@@ -504,7 +504,7 @@ class compression:
                                 
                                 
 	                           
-                                if Portal==7 or Portal==2:
+                                if Portal==7 or Portal==2 or Portal==1:
                                  
                                      corridors=corridors+1%8
                                      if block==corridors%3:
