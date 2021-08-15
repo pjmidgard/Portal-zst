@@ -281,10 +281,7 @@ class compression:
                                             
                                 
                                 
-                                with open("pause", "r") as text:
-                                        datah = text.read()
-                                        if datah=="*":
-                                            os.system("pause")
+                           
                                 ghjd=0
                                 ghjd=ghj1*bnkw
                                 
@@ -569,7 +566,10 @@ class compression:
                             
                                     blockw=4
                                     blockw1=3
-                        
+                             with open("pause", "r") as text:
+                                        datah = text.read()
+                                        if datah=="*":
+                                            os.system("pause")
                                         #print(sssssw)
                                 
                                     wer=""
