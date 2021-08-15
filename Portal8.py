@@ -696,8 +696,14 @@ class compression:
                         assx=10
                         
                         f2.write(jl)
+                        x3=0
+                
 
-                if namez=="ul":
+                                            
+                                            
+           
+    def cryptograpy_unpack(self):  
+    	if namez=="ul":
                     corridors=0
                     cor=7
                     name = input("What is name of file? ")
@@ -1046,12 +1052,8 @@ class compression:
                                         if assx==10:
                                         	
                                             f2.write(jl)
-                                            x2 = time()
-                                            x3=x2-x
-                                            return print(x3)
-           
-    def cryptograpy_unpack(self):                      
-                 if namez=="cl":
+                                            x2 = time()                                
+			if namez=="cl":
                     corridors=0
                     cor=7
                     name = input("What is name of file? ")
@@ -1727,3 +1729,5 @@ print(xw4)
 
 xw5=d.cryptograpy3()
 print(xw5)
+
+xw
