@@ -6,11 +6,9 @@ import binascii
 namez = input("ul,c or for compress cl,u for extract for compress zst cld fo extract zst cldd;; cld3; cldd3? ")
 #@Author Jurijus pacalovas
 class compression:
-    
-    
+ 
     def cryptograpy_compression(self):
-                
-               
+          
         self.name = "Written: Jurijus pacalovas Price Protal 5 000 000 Euro cost Date: 13/08/2021 21:26 Deep 14.5 ERA"
         if namez=="c":
             name = input("What is name of file? ")
