@@ -78,12 +78,12 @@ class compression:
 
                        # Read the whole file at once
                         data = binary_file.read()
-                        if Portal==7 and data[0:41]!=b'\x89\x50\x4e':
+                        if Portal==7 and data[0:3]!=b'\x89\x50\x4e':
 
                          	print("Sorry, this incorect format of file. Please, change format back.")
                          	raise SystemExit
                         if Portal==7 and 				data[0:3]==b'\x89\x50\x4e':     
-                        	data=data[41:]
+                        	data=data[3:]
                         	
 
                         s=str(data)
@@ -308,7 +308,7 @@ class compression:
                                          	e4="0"
                                          	
                                          	e4=""
-                                     if block==corridors%13:
+                                     if block==corridors%3:
                                          if e4=="1":
                                          	sda3=sda3+"0"
                                          	e4="0"
@@ -699,7 +699,7 @@ class compression:
 	                                         	e4="0"
 	                                         	
 	                                         	e4=""
-	                                     if block==corridors%13:
+	                                     if block==corridors%3:
 	                                         if e4=="1":
 	                                         	sda3=sda3+"0"
 	                                         	e4="0"
