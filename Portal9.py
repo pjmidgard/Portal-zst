@@ -358,7 +358,7 @@ class compression:
                                     szxzs=""
                             
                                     assxw=assxw+1
-                                    if assxw==10:
+                                    if assxw==1:
                                         assx=10
                                         if assx==10:
                                         	
@@ -752,7 +752,7 @@ class compression:
                                     szxzs=""
                             
                                     assxw=assxw+1
-                                    if assxw==10:
+                                    if assxw==1:
                                         assx=10
                                         if assx==10:
                                            
