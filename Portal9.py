@@ -78,12 +78,7 @@ class compression:
 
                        # Read the whole file at once
                         data = binary_file.read()
-                        if Portal==7 and data[0:3]!=b'\x89\x50\x4e':
 
-                         	print("Sorry, this incorect format of file. Please, change format back.")
-                         	raise SystemExit
-                        if Portal==7 and 				data[0:3]==b'\x89\x50\x4e':     
-                        	data=data[3:]
                         	
 
                         s=str(data)
@@ -394,6 +389,8 @@ class compression:
                     	Portal=7
                     
                     
+                    nac=len(nameas)
+                    
                     countraz=0
                     cvf=2
                     cvf1=0
@@ -425,11 +422,13 @@ class compression:
                             f3.write(s)
                     with open(name, "rb") as binary_file:
 
-                        # Read the whole file at once
+                       # Read the whole file at once
                         data = binary_file.read()
-                        
+
+                        	
+
                         s=str(data)
-                        
+                       
                         lenf1=len(data)
                         lenf5=len(data)
                         
@@ -555,6 +554,7 @@ class compression:
 	                                        e4="1"
 	                                        block=0
 	                                        e4=""    
+                                
                                 if Portal==2:
                                 	corridors=corridors+1%257
                                 
@@ -609,10 +609,9 @@ class compression:
 	                                        e4="1"
 	                                        block=0
 	                                        e4=""     
-                                	
-                                
-                                if Portal==1:
-                                     
+	                           
+                                if Portal==7:
+                                 
                                      corridors=corridors+1%8
                                      if block==corridors%3:
                                          if e4=="0":
@@ -626,7 +625,7 @@ class compression:
                                          	e4="1"
                                          	block=0
                                          	e4=""
-                                     if block>=corridors%8:
+                                     if block>=corridors%9:
                                          if e4=="1":
                                          	sda3=sda3+"0"
                                          	e4="0"
@@ -638,7 +637,7 @@ class compression:
                                              e4="1"
                                              
                                              e4=""
-                                     if block<=corridors%6 and block>3:
+                                     if block<=corridors%13 and block>3:
                                          if e4=="0":
                                          	sda3=sda3+"1"
                                          	e4="1"
@@ -650,69 +649,18 @@ class compression:
                                          	e4="0"
                                          	
                                          	e4=""
-                                     if block==corridors%7:
+                                     if block==corridors%3:
                                          if e4=="1":
                                          	sda3=sda3+"0"
                                          	e4="0"
                                          	e4=""
                                      if e4=="0":
-                                         	sda3=sda3+"1"
-                                         	e4="1"
+                                         sda3=sda3+"1"
+                                         e4="1"
                                          
-                                         	e4=""
-                                     if Portal==7:
-                                 
-	                                     corridors=corridors+1%8
-	                                     if block==corridors%3:
-	                                         if e4=="0":
-	                                         	sda3=sda3+"0"
-	                                         	e4="0"
-	                                         	block=0
-	                                         	e4=""
-	                                         	
-	                                         if e4=="1":
-	                                         	sda3=sda3+"1"
-	                                         	e4="1"
-	                                         	block=0
-	                                         	e4=""
-	                                     if block>=corridors%9:
-	                                         if e4=="1":
-	                                         	sda3=sda3+"0"
-	                                         	e4="0"
-	                                         	
-	                                         	e4=""
-	                                         	
-	                                     if e4=="0":
-	                                             sda3=sda3+"1"
-	                                             e4="1"
-	                                             
-	                                             e4=""
-	                                     if block<=corridors%13 and block>3:
-	                                         if e4=="0":
-	                                         	sda3=sda3+"1"
-	                                         	e4="1"
-	                                         	
-	                                         	e4=""
-	                                         	
-	                                         if e4=="1":
-	                                         	sda3=sda3+"0"
-	                                         	e4="0"
-	                                         	
-	                                         	e4=""
-	                                     if block==corridors%3:
-	                                         if e4=="1":
-	                                         	sda3=sda3+"0"
-	                                         	e4="0"
-	                                         	e4=""
-	                                     if e4=="0":
-	                                         sda3=sda3+"1"
-	                                         e4="1"
-	                                         
-	                                         e4=""   
-	                                 
-                                     
-
-
+                                         e4=""   
+ 
+	                                                  
                                 e2=e2+1
                                 e3=e3+1
 
@@ -735,7 +683,7 @@ class compression:
                                     c=c+2
 
                                 if cvf1==1:
-                                    
+                                   
                                     n = int(sda3, 2)
                                 
                                     qqwslenf=len(sda3)
@@ -746,7 +694,6 @@ class compression:
                                     jl=binascii.unhexlify(qqwslenf % n)
                                     sssssw=len(jl)
                                     data=jl
-                                    if Portal==7:                                										jl=b'\x89\x50\x4e'+jl
                                     qqqwz=qqqwz+1
                                     szxzzza=""
                                     szxzs=""
@@ -755,7 +702,7 @@ class compression:
                                     if assxw==1:
                                         assx=10
                                         if assx==10:
-                                           
+                                        	
                                             f2.write(jl)
                                             x2 = time()
                                             x3=x2-x
