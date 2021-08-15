@@ -58,7 +58,7 @@ wer=""
 qtqweqw=""
 numberschangenotexist = []
 numbers = []
-namez = input("Please, enter c or c1 or c2 for compress and for u or u1 or u2 for extract? ")
+namez = input("Please, enter c for compress and for u for extract? ")
 if namez=="c":
     name = input("What is name of file? ")
     zzaax=""
@@ -413,8 +413,8 @@ if namez=="u":
     blockw1=4
     nameas=name
     nac=len(nameas)
-    if nameas[nac-2:nac]==".b":
-        nameas=nameas[0:nac-2]
+    if nameas[nac-16:nac]==".bin.bin.bin.bin":
+        nameas=nameas[0:nac-16]
     countraz=0
     
     s=""
