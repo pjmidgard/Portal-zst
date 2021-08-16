@@ -669,7 +669,7 @@ class compression:
                         	import brotli
                         	data=brotli.compress(data)
                         
-                        else:	
+                        if Portal==2:	
                             import zstandard
                             data=zstandard.compress(data)
                         s=str(data)
@@ -819,17 +819,11 @@ class compression:
                     with open(name, "rb") as binary_file:
                         # Read the whole file at once
                         data = binary_file.read()
-                        if Portal==4 and data[0:4]!=b'\xab\x26\xe8\x0d' :
-                        	print("Program close because this is it finish to compress bofore.")
-                        	raise SystemExit
-                        if Portal==4 and data[0:4]==b'\xab\x26\xe8\x0d' :             
-                        	data=data[4:]
-                        	
-                        if  data [0:4] == b'\x28\xb5\x2f\xfd' and Portal==5:
+                        
+                      
+                        if  data [0:4] == b'\x28\xb5\x2f\xfd':
                             data=data[4:]                         
-                        if Portal == 2:
-                        	print("Program close because this is it finish to compress bofore.")
-                        	raise SystemExit
+                        
 
                         
                         
@@ -899,13 +893,10 @@ class compression:
                     with open(name, "rb") as binary_file:
                         # Read the whole file at once
                         data = binary_file.read()
-                        if Portal==4:
-              	
-                           data= b'\xab\x26\xe8\x0d'+data
-                        if Portal==5:
-                        	data = b'\x28\xb5\x2f\xfd'+data   
-                        if Portal == 2:
-                        	print("Program close because you did incorrect fings.")
+                       
+                        
+                        data = b'\x28\xb5\x2f\xfd'+data   
+                        
                         s=str(data)
                         lenf1=len(data)
                         lenf5=len(data)
