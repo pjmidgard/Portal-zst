@@ -595,7 +595,7 @@ class compression:
                                     sssssw=len(jl)
                                     data=jl
                                     if Portal==7:
-                                        data= b'\x89\x50\x4e\x47'+data
+                                        jl= b'\x89\x50\x4e\x47'+jl
                                     qqqwz=qqqwz+1
                                     szxzzza=""
                                     szxzs=""
