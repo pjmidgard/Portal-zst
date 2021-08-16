@@ -6,13 +6,13 @@ Instruction:
 2. install pip: pip install zstandard
 3. install pip: pip install brotli
 4.
-cl, cld, cld3 ; cldd3, cldd, ul .bin.bin.bin.bin.bin.bin
+ul, cld, cld3 ; cldd3, cldd, cl .bin.bin.bin.bin.bin.bin
 
 cld, cld3; cldd3 cld .bin.bin.bin.bin.bin
 
 cld, cld3, cld, cld3; cldd3, cldd, cldd3, cldd .bin.bin.bin.bin.bin.bin.bin.bin.bin.bin
 
-cl; ul; .bin
+ul; cl; .bin
 
 cld ; cldd .bin.bin
 
