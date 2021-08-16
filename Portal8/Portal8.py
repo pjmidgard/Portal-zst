@@ -300,7 +300,7 @@ class compression:
                                     jl=binascii.unhexlify(qqwslenf % n)
                                     sssssw=len(jl)
                                     data=jl
-                                    jl=+jl
+                                    
                                     qqqwz=qqqwz+1
                                     szxzzza=""
                                     szxzs=""
