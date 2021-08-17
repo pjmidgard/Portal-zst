@@ -631,7 +631,7 @@ class compression:
                     if nameas[nac-4:nac]==".png":
                     	Portal=4
                     nameas=name+".bin.bin"
-                        
+                    print(Portal)   
                     countraz=0
                     cvf=2
                     cvf1=0
@@ -741,12 +741,12 @@ class compression:
                         # Read the whole file at once
                         data = binary_file.read()
                         lenf10=len(data)
-                       
+                        print(Portal)
                         
                         if Portal==4:
                         	import brotli
                         	data=brotli.decompress(data)
-                        if Portal==5:	
+                        if Portal==2:	
                             import zstandard
                             data=zstandard.decompress(data)
                    
