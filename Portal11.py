@@ -824,7 +824,7 @@ class compression:
                         if  data [0:4] == b'\x28\xb5\x2f\xfd':
                             data=data[4:]  
                               
-                        if  data [0:4] != b'\x28\xb5\x2f\xfd':
+                        elif  data [0:4] != b'\x28\xb5\x2f\xfd':
                         	print("Program close because this is file incorrect or compression finished before.")
                         	raise SystemExit	
 
