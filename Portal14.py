@@ -82,11 +82,11 @@ class compression:
 
                        # Read the whole file at once
                         data = binary_file.read()
-                        if Portal==9 and data[0:4]!=b'\xff\xd8\xff\xe1':
+                        if Portal==9 and data[0:3]!=b'\xff\xd8\xff':
                         	print("Program close because this is file incorrect")
                         	raise SystemExit
-                        if Portal==9 and data[0:4]==b'\xff\xd8\xff\xe1': 
-                        	data=data[11:]
+                        if Portal==9 and data[0:3]==b'\xff\xd8\xff': 
+                        	data=data[3:]
                         if Portal==7 and data[0:4]!=b'\x89\x50\x4e\x47' :
                         	print("Program close because this is file incorrect")
                         	raise SystemExit
