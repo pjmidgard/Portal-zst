@@ -35,8 +35,6 @@ class compression:
                     	Portal=1
                     if nameas[nac-4:nac]==".png":
                     	Portal=7
-                    if nameas[nac-4:nac]==".mp4":
-                    	Portal=8
 
                     	
                     nameas=name+".bin"
@@ -85,12 +83,6 @@ class compression:
                         	raise SystemExit
                         if Portal==7 and data[0:4]==b'\x89\x50\x4e\x47' :             
                         	data=data[4:]
-                        if Portal==8 and data[0:4]!=b'\x00\x00\x00\x18\x66\x74\x79\x70\x6d\x70\x34':
-                        	print("Program close because this is file incorrect")
-                        	raise SystemExit
-                        if Portal==7 and data[0:4]==b'\x00\x00\x00\x18\x66\x74\x79\x70\x6d\x70\x34':             
-                        	data=data[11:]
-         
 
                         	
 
@@ -166,169 +158,8 @@ class compression:
                                 e4=sda2[e2:e3]
                                 
                                 block=block+1
-                                
-                                if Portal==3:
-	                                corridors=corridors+1%257
-	                                
-	                                if block<=corridors:
-	                                    if e4=="0":
-	                                        sda3=sda3+"0"
-	                                        e4="0"
-	                                        block=corridors
-	                                        e4=""
-	                                        
-	                                    if e4=="1":
-	                                        sda3=sda3+"1"
-	                                        e4="1"
-	                                        block=7
-	                                        e4=""
-	
-	                                if block>=corridors:
-	                                    if e4=="1":
-	                                        sda3=sda3+"0"
-	                                        e4="0"
-	                                        block=0
-	                                        e4=""
-	                                        
-	                                    if e4=="0":
-	                                        sda3=sda3+"1"
-	                                        e4="1"
-	                                        block=0
-	                                        e4=""
-	                                        
-	                                if block<=6:
-	                                    if e4=="0":
-	                                        sda3=sda3+"1"
-	                                        e4="1"
-	                                        block=7
-	                                        e4=""
-	                                       
-	                                    if e4=="1":
-	                                        sda3=sda3+"0"
-	                                        e4="0"
-	                                        block=7
-	                                        e4=""
-	                                             
-	                                if block==corridors:
-	                                    if e4=="1":
-	                                        sda3=sda3+"0"
-	                                        e4="0"
-	                                        block=corridors
-	                                        e4=""
-	                                                 
-	                                if e4=="0":
-	                                        sda3=sda3+"1"
-	                                        e4="1"
-	                                        block=0
-	                                        e4=""    
-                                
-                                if Portal==2 or Portal==8:
-                                	corridors=corridors+1%257
-                                
-	                                if block<=3:
-	                                    if e4=="0":
-	                                        sda3=sda3+"0"
-	                                        e4="0"
-	                                        block=corridors
-	                                        e4=""
-	                                        
-	                                    if e4=="1":
-	                                        sda3=sda3+"1"
-	                                        e4="1"
-	                                        block=7
-	                                        e4=""
-	
-	                                if block>=8:
-	                                    if e4=="1":
-	                                        sda3=sda3+"0"
-	                                        e4="0"
-	                                        block=0
-	                                        e4=""
-	                                        
-	                                    if e4=="0":
-	                                        sda3=sda3+"1"
-	                                        e4="1"
-	                                        block=0
-	                                        e4=""
-	                                        
-	                                if block<=6:
-	                                    if e4=="0":
-	                                        sda3=sda3+"1"
-	                                        e4="1"
-	                                        block=7
-	                                        e4=""
-	                                       
-	                                    if e4=="1":
-	                                        sda3=sda3+"0"
-	                                        e4="0"
-	                                        block=7
-	                                        e4=""
-	                                             
-	                                if block==7:
-	                                    if e4=="1":
-	                                        sda3=sda3+"0"
-	                                        e4="0"
-	                                        block=0
-	                                        e4=""
-	                                                 
-	                                if e4=="0":
-	                                        sda3=sda3+"1"
-	                                        e4="1"
-	                                        block=0
-	                                        e4=""     
-	                                	
-	                                
-                                if Portal==1:
-                                 
-                                     corridors=corridors+1%8
-                                     if block==corridors%3:
-                                         if e4=="0":
-                                         	sda3=sda3+"0"
-                                         	e4="0"
-                                         	block=0
-                                         	e4=""
-                                         	
-                                         if e4=="1":
-                                         	sda3=sda3+"1"
-                                         	e4="1"
-                                         	block=0
-                                         	e4=""
-                                     if block>=corridors%8:
-                                         if e4=="1":
-                                         	sda3=sda3+"0"
-                                         	e4="0"
-                                         	
-                                         	e4=""
-                                         	
-                                         if e4=="0":
-                                             sda3=sda3+"1"
-                                             e4="1"
-                                             
-                                             e4=""
-                                     if block<=corridors%6 and block>3:
-                                         if e4=="0":
-                                         	sda3=sda3+"1"
-                                         	e4="1"
-                                         	
-                                         	e4=""
-                                         	
-                                         if e4=="1":
-                                         	sda3=sda3+"0"
-                                         	e4="0"
-                                         	
-                                         	e4=""
-                                     if block==corridors%7:
-                                         if e4=="1":
-                                         	sda3=sda3+"0"
-                                         	e4="0"
-                                         	e4=""
-                                     if e4=="0":
-                                         sda3=sda3+"1"
-                                         e4="1"
-                                         
-                                         e4=""   
 
-                                if Portal==3 or Portal ==2:
+                                if Portal==3:
 	                                corridors=corridors+1%257
 	                                
 	                                if block<=corridors:
@@ -385,11 +216,10 @@ class compression:
                                 
                                
 	                           
-                                if Portal==7 or Portal==2 or Portal==1:
+                                if Portal==7 or Portal==2 or Portal == 1:
                                  
                                      corridors=corridors+1%8
-                                                                       
-                                     if block==corridors%1 or block==corridors%4:
+                                     if block==corridors%3:
                                          if e4=="0":
                                          	sda3=sda3+"0"
                                          	e4="0"
@@ -401,7 +231,7 @@ class compression:
                                          	e4="1"
                                          	block=0
                                          	e4=""
-                                     if block>=corridors%2:
+                                     if block>=corridors%9:
                                          if e4=="1":
                                          	sda3=sda3+"0"
                                          	e4="0"
@@ -413,7 +243,7 @@ class compression:
                                              e4="1"
                                              
                                              e4=""
-                                     if block<=corridors%13 or block==corridors%7 or block>3:
+                                     if block<=corridors%13 and block>3:
                                          if e4=="0":
                                          	sda3=sda3+"1"
                                          	e4="1"
@@ -425,7 +255,7 @@ class compression:
                                          	e4="0"
                                          	
                                          	e4=""
-                                     if block==corridors%5 or block==corridors%9:
+                                     if block==corridors%3:
                                          if e4=="1":
                                          	sda3=sda3+"0"
                                          	e4="0"
@@ -434,10 +264,8 @@ class compression:
                                          sda3=sda3+"1"
                                          e4="1"
                                          
-                                         e4="" 
-                                         
-                                   
-	 
+                                         e4=""   
+ 
 	                                                  
                                 e2=e2+1
                                 e3=e3+1
@@ -512,8 +340,6 @@ class compression:
                     	Portal=1
                     if nameas[nac-4:nac]==".png":
                     	Portal=7
-                    if nameas[nac-4:nac]==".mp4":
-                    	Portal=8
                     
                     
                     nac=len(nameas)
@@ -626,8 +452,7 @@ class compression:
                                 e4=sda2[e2:e3]
                                 
                                 block=block+1
-                                
-                                
+
                                 if Portal==3:
 	                                corridors=corridors+1%257
 	                                
@@ -683,63 +508,9 @@ class compression:
 	                                        block=0
 	                                        e4=""    
                                 
-                                if Portal==2 or Portal==8:
-                                	corridors=corridors+1%257
                                 
-	                                if block<=3:
-	                                    if e4=="0":
-	                                        sda3=sda3+"0"
-	                                        e4="0"
-	                                        block=corridors
-	                                        e4=""
-	                                        
-	                                    if e4=="1":
-	                                        sda3=sda3+"1"
-	                                        e4="1"
-	                                        block=7
-	                                        e4=""
-	
-	                                if block>=8:
-	                                    if e4=="1":
-	                                        sda3=sda3+"0"
-	                                        e4="0"
-	                                        block=0
-	                                        e4=""
-	                                        
-	                                    if e4=="0":
-	                                        sda3=sda3+"1"
-	                                        e4="1"
-	                                        block=0
-	                                        e4=""
-	                                        
-	                                if block<=6:
-	                                    if e4=="0":
-	                                        sda3=sda3+"1"
-	                                        e4="1"
-	                                        block=7
-	                                        e4=""
-	                                       
-	                                    if e4=="1":
-	                                        sda3=sda3+"0"
-	                                        e4="0"
-	                                        block=7
-	                                        e4=""
-	                                             
-	                                if block==7:
-	                                    if e4=="1":
-	                                        sda3=sda3+"0"
-	                                        e4="0"
-	                                        block=0
-	                                        e4=""
-	                                                 
-	                                if e4=="0":
-	                                        sda3=sda3+"1"
-	                                        e4="1"
-	                                        block=0
-	                                        e4=""     
-	                                	
-	                                
-                                if Portal==1:
+	                           
+                                if Portal==7 or Portal==2 or Portal==1:
                                  
                                      corridors=corridors+1%8
                                      if block==corridors%3:
@@ -754,7 +525,7 @@ class compression:
                                          	e4="1"
                                          	block=0
                                          	e4=""
-                                     if block>=corridors%8:
+                                     if block>=corridors%9:
                                          if e4=="1":
                                          	sda3=sda3+"0"
                                          	e4="0"
@@ -766,7 +537,7 @@ class compression:
                                              e4="1"
                                              
                                              e4=""
-                                     if block<=corridors%6 and block>3:
+                                     if block<=corridors%13 and block>3:
                                          if e4=="0":
                                          	sda3=sda3+"1"
                                          	e4="1"
@@ -778,7 +549,7 @@ class compression:
                                          	e4="0"
                                          	
                                          	e4=""
-                                     if block==corridors%7:
+                                     if block==corridors%3:
                                          if e4=="1":
                                          	sda3=sda3+"0"
                                          	e4="0"
@@ -787,118 +558,8 @@ class compression:
                                          sda3=sda3+"1"
                                          e4="1"
                                          
-                                         e4=""      
-
-                                if Portal==3 or Portal==2:
-	                                corridors=corridors+1%257
-	                                
-	                                if block<=corridors:
-	                                    if e4=="0":
-	                                        sda3=sda3+"0"
-	                                        e4="0"
-	                                        block=corridors
-	                                        e4=""
-	                                        
-	                                    if e4=="1":
-	                                        sda3=sda3+"1"
-	                                        e4="1"
-	                                        block=7
-	                                        e4=""
-	
-	                                if block>=corridors:
-	                                    if e4=="1":
-	                                        sda3=sda3+"0"
-	                                        e4="0"
-	                                        block=0
-	                                        e4=""
-	                                        
-	                                    if e4=="0":
-	                                        sda3=sda3+"1"
-	                                        e4="1"
-	                                        block=0
-	                                        e4=""
-	                                        
-	                                if block<=6:
-	                                    if e4=="0":
-	                                        sda3=sda3+"1"
-	                                        e4="1"
-	                                        block=7
-	                                        e4=""
-	                                       
-	                                    if e4=="1":
-	                                        sda3=sda3+"0"
-	                                        e4="0"
-	                                        block=7
-	                                        e4=""
-	                                             
-	                                if block==corridors:
-	                                    if e4=="1":
-	                                        sda3=sda3+"0"
-	                                        e4="0"
-	                                        block=corridors
-	                                        e4=""
-	                                                 
-	                                if e4=="0":
-	                                        sda3=sda3+"1"
-	                                        e4="1"
-	                                        block=0
-	                                        e4=""    
-                                
-                               
-	                           
-                                if Portal==7 or Portal==2 or Portal==1:
-                                 
-                                     corridors=corridors+1%8
-                                     if block==corridors%1 or block==corridors%4:
-                                         if e4=="0":
-                                         	sda3=sda3+"0"
-                                         	e4="0"
-                                         	block=0
-                                         	e4=""
-                                         	
-                                         if e4=="1":
-                                         	sda3=sda3+"1"
-                                         	e4="1"
-                                         	block=0
-                                         	e4=""
-                                     if block>=corridors%2:
-                                         if e4=="1":
-                                         	sda3=sda3+"0"
-                                         	e4="0"
-                                         	
-                                         	e4=""
-                                         	
-                                         if e4=="0":
-                                             sda3=sda3+"1"
-                                             e4="1"
-                                             
-                                             e4=""
-                                     if block<=corridors%13 or block==corridors%7 or block>3:
-                                         if e4=="0":
-                                         	sda3=sda3+"1"
-                                         	e4="1"
-                                         	
-                                         	e4=""
-                                         	
-                                         if e4=="1":
-                                         	sda3=sda3+"0"
-                                         	e4="0"
-                                         	
-                                         	e4=""
-                                     if block==corridors%5 or block==corridors%9:
-                                         if e4=="1":
-                                         	sda3=sda3+"0"
-                                         	e4="0"
-                                         	e4=""
-                                     if e4=="0":
-                                         sda3=sda3+"1"
-                                         e4="1"
-                                         
-                                         e4="" 
-                                         
-                                 
-			                                
-                                        
+                                         e4=""   
+ 
 	                                                  
                                 e2=e2+1
                                 e3=e3+1
@@ -935,8 +596,6 @@ class compression:
                                     data=jl
                                     if Portal==7:
                                         jl= b'\x89\x50\x4e\x47'+jl
-                                    if Portal==8:
-                                    	                    jl=b'\x00\x00\x00\x18\x66\x74\x79\x70\x6d\x70\x34'+jl
                                     qqqwz=qqqwz+1
                                     szxzzza=""
                                     szxzs=""
