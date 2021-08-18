@@ -25,7 +25,7 @@ Jurijus Pacalovas written program.
 
 Jurijus Pacalovas written software.
 
-4.22 v. zst
+4.23 v. zst
 
 0%-99.9949% c.
 
