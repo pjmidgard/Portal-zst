@@ -88,7 +88,7 @@ class compression:
                         if Portal==8 and data[0:11]!=b'\x00\x00\x00\x18\x66\x74\x79\x70\x6d\x70\x34':
                         	print("Program close because this is file incorrect")
                         	raise SystemExit
-                        if Portal==7 and data[0:11]==b'\x00\x00\x00\x18\x66\x74\x79\x70\x6d\x70\x34':             
+                        if Portal==8 and data[0:11]==b'\x00\x00\x00\x18\x66\x74\x79\x70\x6d\x70\x34':             
                         	data=data[11:]
          
 
