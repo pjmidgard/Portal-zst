@@ -18,7 +18,7 @@ cld ; cldd .bin.bin
 
 ul, cld; cl, cldd .bin.bin.bin
 
-c; u .bin.bin.bin.bin
+c; u .bin.bin.bin.bin.bin.bin.bin.bin.bin.bin.bin
 
 
 Jurijus Pacalovas written program.
