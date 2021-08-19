@@ -1,5 +1,5 @@
 # Portal-zst
-Speed: Absolute 2KB Ultra 2MB-10MB Max 8GB-80GB/s
+Speed: Ultra-Absolute 146 Bytes Absolute 2KB Ultra 2MB-10MB Max 8GB-80GB/s
 
 Instruction:
 1. Need python 
