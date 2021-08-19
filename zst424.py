@@ -90,8 +90,8 @@ class compression:
 		    blockw1=4
 		    nameas=name
 		    nac=len(nameas)
-		    if nameas[nac-16:nac]==".bin.bin.bin.bin":
-		        nameas=nameas[0:nac-16]
+		    if nameas[nac-44:nac]==".bin.bin.bin.bin.bin.bin.bin.bin.bin.bin.bin":
+		        nameas=nameas[0:nac-44]
 		    countraz=0
 		    
 		    s=""
@@ -525,7 +525,7 @@ class compression:
 		    numbers = []
 		        
 		    
-		    namea=name+".bin.bin.bin.bin"
+		    namea=name+".bin.bin.bin.bin.bin.bin.bin.bin.bin.bin.bin"
 		    namem=name+"/"
 		
 		    nameas=name
