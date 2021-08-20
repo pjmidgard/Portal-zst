@@ -497,7 +497,7 @@ class compression:
             numbers = []
                 
             
-            namea=name+".bin.bin.bin.bin.bin.bin.bin.bin.bin.bin.bin"
+            namea=name+".bin.bin.bin.bin.bin.bin.bin.bin.bin.bin.bin.bin"
             namem=name+"/"
 
             nameas=name
