@@ -83,8 +83,8 @@ class compression:
             blockw1=4
             nameas=name
             nac=len(nameas)
-            if nameas[nac-3:nac]==".b2":
-                nameas=nameas[0:nac-3]
+            if nameas[nac-48:nac]==".bin.bin.bin.bin.bin.bin.bin.bin.bin.bin.bin.bin":
+                nameas=nameas[0:nac-48]
             countraz=0
             
             s=""
