@@ -75,6 +75,6 @@ In computer science and information theory, a Huffman code is a particular 
 
 Brotli is a data format specification[2] for data streams compressed with a specific combination of the general-purpose LZ77 lossless compression algorithm, Huffman coding and 2nd order context modelling. Brotli is a compression algorithm developed by Google and works best for text compression. Brotli is primarily used by web servers and content delivery networks to compress HTTP content, making internet websites load faster. A successor to gzip, it is supported by all major web browsers and is becoming increasingly popular, as it provides better compression than gzip
 
-Also, I use counting for Area 14 bits and Ultra-Absolute 3 Bytes variations and looking for information not exist.  
+Also, I use counting for Area 14 bits and Ultra-Absolute 3 Bytes compression variations and looking for information not exist.  
 
 Compression ee-ther.
