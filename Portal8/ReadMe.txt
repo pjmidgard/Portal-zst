@@ -1,1 +1,0 @@
-Jurijus Pacalovas write software Portal8.
