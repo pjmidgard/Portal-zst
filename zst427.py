@@ -2397,7 +2397,7 @@ class compression:
                                     if Portal==7:
                                         jl= b'\x89\x50\x4e\x47'+jl
                                     if Portal==8:
-                                    	                    jl=b'\x00\x00\x00\x18\x66\x74\x79\x70\x6d\x70\x34'+jl
+                                    	jl=b'\x00\x00\x00\x18\x66\x74\x79\x70\x6d\x70\x34'+jl
                                     if Portal==9:
                                     	                    																		jl=b'\xff\xd8\xff'+jl
                                     qqqwz=qqqwz+1
@@ -2469,13 +2469,9 @@ class compression:
                         data = binary_file.read()
                         lenf10=len(data)
                    
-                        if Portal==4:
-                        	import brotli
-                        	data=brotli.compress(data)
+                        import zstandard
+                        data=zstandard.compress(data)
                         
-                        if Portal==2:	
-                            import zstandard
-                            data=zstandard.compress(data)
                         s=str(data)
                         lenf1=len(data)
                         lenf5=len(data)
@@ -2545,17 +2541,10 @@ class compression:
                         # Read the whole file at once
                         data = binary_file.read()
                         lenf10=len(data)
-                        
-                        
-                        if Portal==4:
-                        	import brotli
-                        	data=brotli.decompress(data)
-                        if Portal==2:	
-                            import zstandard
-                            data=zstandard.decompress(data)
+   
+                        import zstandard
+                        data=zstandard.decompress(data)
                    
-                        
-                        
                         s=str(data)
                         lenf1=len(data)
                         lenf5=len(data)
