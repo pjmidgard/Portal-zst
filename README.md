@@ -5,7 +5,8 @@ Instruction:
 1. Need python 3.8.3
 2. install pip: pip install zstandard
 3. install pip: pip install brotli
-4.
+4. install pip: pip install lzma
+5.
 ul, cld, cld3 ; cldd3, cldd, cl .bin.bin.bin.bin.bin.bin
 
 cld, cld3; cldd3 cld .bin.bin.bin.bin.bin
