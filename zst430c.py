@@ -2546,18 +2546,16 @@ class compression:
                         lenf10=len(data)
                         
                         
-                        if Portal==4:
+                        
                         	 
            
-                        	data=b'\xfd\x37\x7a\x58\x5a'+data 
+                        data=b'\xfd\x37\x7a\x58\x5a'+data 
                          
-                        	import lzma
-                        	data=lzma.decompress(data)
+                        import lzma
+                        data=lzma.decompress(data)
                         	
                         	
-                        if Portal==2:	
-                            import zstandard
-                            data=zstandard.decompress(data)
+                       
                    
                         
                         
