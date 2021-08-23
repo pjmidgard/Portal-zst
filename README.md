@@ -24,7 +24,7 @@ c2; u2 .bin.bin.bin.bin.bin.bin.bin.bin.bin.bin.bin.bin
 
 Jurijus Pacalovas written program.
 
-4.25-4.29v. zst
+4.25,427 v. zst
 
 0%-99.9949% c.
 
