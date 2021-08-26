@@ -1627,7 +1627,7 @@ class compression:
                                 
                                 block=block+1
                                 
-                                if Portal==3:
+                               
          
                                 if e4=="1" and e3== e3%3:
                                 	sda3=sda3+"0"
