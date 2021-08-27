@@ -1627,58 +1627,64 @@ class compression:
                                 
                                 block=block+1
                                 
-                                if e4=="0" and e3== e3%9:
-                                	sda3=sda3+"1"
-                                	e4="1"
-                                	e4=""
-                                    
-                                if e4=="1" and e3== e3%8:
-                                    sda3=sda3+"0"
-                                    e4="0"
-                                    e4=""
-                                    
-                                        
-                                if e4=="1" and e3 ==e3%1:
-                                	sda3=sda3+"0"
-                                	e4="0"
-                                	e4=""
-                                	
-                                if e4=="0" and e3 ==e3%1:
-                                	sda3=sda3+"1"
-                                	e4="1"
-                                	e4=""
-                                	
-                                	
-                                	
-                                if e4=="0" and e3!=e3%9 and e3!=e3%8 and e3!=e3%1:
-                                    sda3=sda3+"0"
-                                    e4="0"
-                                    e4="" 
-                                if e4=="1" and e3!=e3%9 and e3!=e3%8 and e3!=e3%1:
-                                    sda3=sda3+"1"
-                                    e4="1"
-                                    e4=""      
-                           
-                                if e4=="1" and e3== e3%3:
-                                	sda3=sda3+"0"
-                                	e4="0"
-                                	e4=""
-                                    
-                                if e4=="0" and e3== e3%2:
-                                    sda3=sda3+"1"
-                                    e4="1"
-                                    e4=""
-                                    
-                                        
-                                if e4=="1":
-                                	sda3=sda3+"0"
-                                	e4="0"
-                                	e4=""
-                                    
-                                if e4=="0":
-                                    sda3=sda3+"1"
-                                    e4="1"
-                                    e4=""
+                                if Portal==2:
+		                           
+	                                if e4=="1" and e3== e3%3:
+	                                	sda3=sda3+"0"
+	                                	e4="0"
+	                                	e4=""
+	                                    
+	                                if e4=="0" and e3== e3%2:
+	                                    sda3=sda3+"1"
+	                                    e4="1"
+	                                    e4=""
+	                                    
+	                                        
+	                                if e4=="1":
+	                                	sda3=sda3+"0"
+	                                	e4="0"
+	                                	e4=""
+	                                    
+	                                if e4=="0":
+	                                    sda3=sda3+"1"
+	                                    e4="1"
+	                                    e4=""
+                                
+                                if Portal!=2:
+                                
+	                                if e4=="0" and e3== e3%9:
+	                                	sda3=sda3+"1"
+	                                	e4="1"
+	                                	e4=""
+	                                    
+	                                if e4=="1" and e3== e3%8:
+	                                    sda3=sda3+"0"
+	                                    e4="0"
+	                                    e4=""
+	                                    
+	                                        
+	                                if e4=="1" and e3 ==e3%1:
+	                                	sda3=sda3+"0"
+	                                	e4="0"
+	                                	e4=""
+	                                	
+	                                if e4=="0" and e3 ==e3%1:
+	                                	sda3=sda3+"1"
+	                                	e4="1"
+	                                	e4=""
+	                                	
+	                                	
+	                                	
+	                                if e4=="0" and e3!=e3%9 and e3!=e3%8 and e3!=e3%1:
+	                                    sda3=sda3+"0"
+	                                    e4="0"
+	                                    e4="" 
+	                                if e4=="1" and e3!=e3%9 and e3!=e3%8 and e3!=e3%1:
+	                                    sda3=sda3+"1"
+	                                    e4="1"
+	                                    e4=""   
+	                                    
+	                       
                              
                                 e2=e2+1
                                 e3=e3+1
@@ -1870,58 +1876,64 @@ class compression:
                                 
                                 block=block+1
                                 
-                                if e4=="0" and e3== e3%9:
-                                	sda3=sda3+"1"
-                                	e4="1"
-                                	e4=""
-                                    
-                                if e4=="1" and e3== e3%8:
-                                    sda3=sda3+"0"
-                                    e4="0"
-                                    e4=""
-                                    
-                                        
-                                if e4=="1" and e3 ==e3%1:
-                                	sda3=sda3+"0"
-                                	e4="0"
-                                	e4=""
-                                	
-                                if e4=="0" and e3 ==e3%1:
-                                	sda3=sda3+"1"
-                                	e4="1"
-                                	e4=""
-                                	
-                                	
-                                	
-                                if e4=="0" and e3!=e3%9 and e3!=e3%8 and e3!=e3%1:
-                                    sda3=sda3+"0"
-                                    e4="0"
-                                    e4="" 
-                                if e4=="1" and e3!=e3%9 and e3!=e3%8 and e3!=e3%1:
-                                    sda3=sda3+"1"
-                                    e4="1"
-                                    e4=""      
-                           
-                                if e4=="1" and e3== e3%3:
-                                	sda3=sda3+"0"
-                                	e4="0"
-                                	e4=""
-                                    
-                                if e4=="0" and e3== e3%2:
-                                    sda3=sda3+"1"
-                                    e4="1"
-                                    e4=""
-                                    
-                                        
-                                if e4=="1":
-                                	sda3=sda3+"0"
-                                	e4="0"
-                                	e4=""
-                                    
-                                if e4=="0":
-                                    sda3=sda3+"1"
-                                    e4="1"
-                                    e4="" 
+                                #Ferma
+                                
+                                if Portal==2:
+		                           
+	                                if e4=="1" and e3== e3%3:
+	                                	sda3=sda3+"0"
+	                                	e4="0"
+	                                	e4=""
+	                                    
+	                                if e4=="0" and e3== e3%2:
+	                                    sda3=sda3+"1"
+	                                    e4="1"
+	                                    e4=""
+	                                    
+	                                        
+	                                if e4=="1":
+	                                	sda3=sda3+"0"
+	                                	e4="0"
+	                                	e4=""
+	                                    
+	                                if e4=="0":
+	                                    sda3=sda3+"1"
+	                                    e4="1"
+	                                    e4=""
+                                
+                                if Portal!=2:
+                                
+	                                if e4=="0" and e3== e3%9:
+	                                	sda3=sda3+"1"
+	                                	e4="1"
+	                                	e4=""
+	                                    
+	                                if e4=="1" and e3== e3%8:
+	                                    sda3=sda3+"0"
+	                                    e4="0"
+	                                    e4=""
+	                                    
+	                                        
+	                                if e4=="1" and e3 ==e3%1:
+	                                	sda3=sda3+"0"
+	                                	e4="0"
+	                                	e4=""
+	                                	
+	                                if e4=="0" and e3 ==e3%1:
+	                                	sda3=sda3+"1"
+	                                	e4="1"
+	                                	e4=""
+	                                	
+	                                	
+	                                	
+	                                if e4=="0" and e3!=e3%9 and e3!=e3%8 and e3!=e3%1:
+	                                    sda3=sda3+"0"
+	                                    e4="0"
+	                                    e4="" 
+	                                if e4=="1" and e3!=e3%9 and e3!=e3%8 and e3!=e3%1:
+	                                    sda3=sda3+"1"
+	                                    e4="1"
+	                                    e4=""
 	                                                  
                                 e2=e2+1
                                 e3=e3+1
